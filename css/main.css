@@ -7,7 +7,7 @@
 body {
     background: #3c75cc;
     font-family: 'Lato', sans-serif;
-    color: #fff;
+    color: #FFF;
 }
 
 header {
@@ -30,12 +30,18 @@ header {
     border: none;
     border-radius: 20px;
     margin-bottom: 20px;
-    transition: background .2s;
+    transition: background .2s, 
+                box-shadow .2s;
 }
 
-.task-new:hover,
+.task-new:hover {
+    background: #FFF;
+}
+
+
 .task-new:focus {
     background: #FFF;
+    box-shadow: -4px 6px 8px rgba(0,0,0, .5);
 }
 
 .task-list {
